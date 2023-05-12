@@ -1,14 +1,38 @@
 @import 'root.css';
+
+.intro {
+    background-color: var(--main-bg);
+    color: var(--secondary-color);
+    font-family: var(--head-font);
+    font-size: 1.2rem;
+    padding: 10px;
+}
 .header-section {
-    display:grid;
+    margin-top: 2vh;
+    display:flex;
     justify-content: center;
 }
+
+.head-image {
+    max-width: 400px;
+    max-height: 400px;
+    margin: 0 10px;
+}
+.head-image img {
+    height: 100%;
+    width: 100%;
+}
+/*
 .head-image {
     background-image: url(../images/profile1.png);
     width: 100%;
-    max-width: 600px;
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     background-clip: border-box;
+    max-width: 600px;
+    margin: 0 10px;
+    height: 400px;
 }   
+
+*/
