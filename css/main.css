@@ -1,5 +1,14 @@
 @import 'root.css';
-
 .header-section {
-    
+    display:grid;
+    justify-content: center;
 }
+.head-image {
+    background-image: url(../images/profile1.png);
+    width: 100%;
+    max-width: 600px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-clip: border-box;
+}   
