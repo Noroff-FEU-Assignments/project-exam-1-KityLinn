@@ -23,7 +23,9 @@ fetch(url, {
 
   wpData()
 
-const mobNav = document.querySelector(".mobile-nav");
+
+// Hamburger menu
+const mobNav = document.querySelector(".mobile-burger");
 const mobItems = document.querySelectorAll(".mob-item");
 const mobButton= document.querySelector(".mob-button");
 const closeIcon= document.querySelector(".fa-xmark");
