@@ -13,15 +13,12 @@
     justify-content: center;
 }
 
-.head-image {
-    max-width: 400px;
-    max-height: 400px;
-    margin: 0 10px;
-}
-.head-image img {
-    height: 100%;
-    width: 100%;
-}
+@media (min-width:1024px) {
+    .intro {
+        padding-left: 10%;
+    }
+ }
+
 /*
 .head-image {
     background-image: url(../images/profile1.png);

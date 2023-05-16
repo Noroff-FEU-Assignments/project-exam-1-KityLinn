@@ -8,7 +8,9 @@
     --secondary-color:#60af05;
     --main-bg: #222;
     --body-color: #E5E5FE;
+    --new-body-color: #e0dfdf;
     --default-text-color:white;
+    --default-text-hover: rgba(255, 255, 255, 0.941);
     --test-color: #D26BE3;
     --green-border: solid var(--secondary-color) 3px;
     --head-font: 'Space Grotesk', sans-serif;
@@ -21,6 +23,7 @@ body {
     'head'
     'main'
     'footer';
+    background-color: var(--new-body-color);
 }
 
 a {
@@ -52,7 +55,7 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    gap: 40px;
     position: absolute;
     top: 8%;
     transform: translateY(-130%);
@@ -63,7 +66,7 @@ header {
     background-color: var(--main-bg);
     color: var(--default-text-color);
     list-style: none;
-    padding: 2rem 0;
+    padding: 6vh 0px;
     border-bottom: var(--green-border);
 }
 
@@ -72,12 +75,17 @@ header {
 }
 .mob-item {
     display: block;
-    margin-top: 5px;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: var(--default-text-color);
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
     text-align: center;
     font-weight: 500;
+}
+.mob-item:hover {
+    transform: translateY(-5%);
+    transition: transform 1.0s;
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
 }
 .showMenu {
     transform: translateY(0%);
@@ -115,14 +123,14 @@ footer {
     grid-area: footer;
     background-color: var(--main-bg);
     margin-top: 5vh;
+    width: 100%;
 
 }
 
 .footer-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 150px;
+    justify-content:space-evenly;
     margin-top: 20px;
     padding-bottom: 20px;
     color: var(--default-text-color);
@@ -140,31 +148,41 @@ footer {
     font-size: 1rem;
 }
 .social-media a {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 
+/* desktop header */
+
 @media (min-width:1024px) {
+    header {
+        display: flex;
+        justify-content: center;
+        height: fit-content;
+        background-color: var(--main-bg);
+        border-bottom: var(--green-border);
+        font-family: var(--head-font);
+        color: var(--secondary-color);
+    }
     .mobile-nav {
         display: none;
     }
     .desktop-nav {
         display: flex;
         flex-direction: row;
-        background-color: var(--main-bg);
-        border-bottom: var(--green-border);
-        font-family: var(--head-font);
-        color: var(--secondary-color);
     }
 
     .nav-links {
         display: flex;
         flex-direction: row;
         gap: 30px;
-        padding: 14px 20px;
+        padding: 13px 20px;
         list-style-type: none;
+
     }
     .nav-links a {
         font-size: 1.2rem;
     }
-
+    .desktop-item:hover {
+        color:var(--secondary-color);
+    }
 }

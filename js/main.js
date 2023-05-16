@@ -1,27 +1,8 @@
-/*
-const url = "https://www.linn-eksamen.com/wp-json/wp/v2/posts";
-fetch(url, {
-  method: "GET",
-  headers: new Headers({
-    Authorization: "Basic " + btoa(username + ":" + password),
-  }),
-})
-  .then((response) => response.json())
-  .then((data) => {
-    console.log(data)
-  })
-  .catch((error) => console.error(error));
-*/  
+import { makeRequest} from "./export.js";
+
+console.log(makeRequest);
 
 
-  
-  async function wpData() {
-    const response = await fetch("https://www.linn-eksamen.com/wp-json/wp/v2/posts");
-    const Data = await response.json();
-    console.log(Data);
-  }
-
-  wpData()
 
 
 // Hamburger menu
