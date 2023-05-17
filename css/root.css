@@ -24,6 +24,7 @@ body {
     'main'
     'footer';
     background-color: var(--new-body-color);
+    height: fit-content;
 }
 
 a {
