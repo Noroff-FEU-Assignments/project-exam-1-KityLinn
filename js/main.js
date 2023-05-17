@@ -1,7 +1,4 @@
-
-
-
-
+import {makeRequest, main_url} from "./export.js";
 
 // Hamburger menu
 const mobNav = document.querySelector(".mobile-burger");
@@ -32,13 +29,6 @@ mobItems.forEach(
 
 // Carousel
 
-async function wpData() {
-  const response = await fetch("https://www.linn-eksamen.com/wp-json/wp/v2/posts?_embed");
-  const Data = await response.json();
-  console.log(Data);
-}
-
-wpData()
 const next = document.querySelector('#next');
 const prev = document.querySelector('#previous');
 let slideIndex = 1;
@@ -49,10 +39,11 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 };
 
-// Thumbnail image controls
 function currentSlide(n) {
   showSlides(slideIndex = n);
 };
+
+
 next.onclick = function() {plusSlides(+1);}
 prev.onclick = function() {plusSlides(-1);}
 
@@ -68,6 +59,32 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "flex";
 }
 
+/*
+`<div class="slide-box">
+<a href="${post-link}" class="slide-link">
+<div class="slide-box-img">
+   <img src="${image-link}" alt="${alt-text}">
+</div>
+<h3>${description}</h3>
+</a>
+</div>`
+*/
+// carousel render fuction
+
+const renderCard = (data) => {
+  return
+`<div class="slide-box">
+<a href="${data.link}" class="slide-link">
+<div class="slide-box-img">
+   <img src="${data.image}" alt="${data.alt}">
+</div>
+<h3>${data.description}</h3>
+</a>
+</div>`
+}
+
+
+makeRequest(main_url, console.log);
 
 /*
 async function wpData() {
