@@ -1,6 +1,4 @@
-import { makeRequest} from "./export.js";
 
-console.log(makeRequest);
 
 
 
@@ -31,3 +29,25 @@ mobItems.forEach(
     mobItems.addEventListener("click", toggleMenu);
   }
 )
+
+// Carousel
+async function wpData() {
+  const response = await fetch("https://www.linn-eksamen.com/wp-json/wp/v2/posts/43?_embed");
+  const Data = await response.json();
+  console.log(Data);
+
+const test = document.querySelector(".test");
+const image = Data._embedded["wp:featuredmedia"][0].source_url;
+const text = Data.title.rendered;
+;
+console.log(image)
+
+test.innerHTML = `
+<img src="${image}" alt="">
+<h3>${text}</h3>
+`
+}
+wpData()
+
+
+// const name = Data._embedded.author[0].name; = author name

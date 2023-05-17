@@ -18,18 +18,18 @@
         padding-left: 10%;
     }
  }
+/* Carousel*/
 
-/*
-.head-image {
-    background-image: url(../images/profile1.png);
+.carousel {
+    display: flex;
+    justify-content: center;
+}
+.test {
+    width: 200px;
+    height: 200px;
+}
+
+.test img {
     width: 100%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top;
-    background-clip: border-box;
-    max-width: 600px;
-    margin: 0 10px;
-    height: 400px;
-}   
-
-*/
+    height: 100%;
+}
