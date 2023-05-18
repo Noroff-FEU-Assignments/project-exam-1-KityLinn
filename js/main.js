@@ -32,7 +32,6 @@ mobItems.forEach(
 const next = document.querySelector('#next');
 const prev = document.querySelector('#previous');
 let slideIndex = 1;
-showSlides(slideIndex);
 
 // Next/previous controls
 function plusSlides(n) {
@@ -69,7 +68,7 @@ function showSlides(n) {
 
 const renderCard = (cardData) => {
   return`<div class="slide-box">
-<a href="./details.html?id=${cardData.id}" class="slide-link">
+<a href="./blog-page.html?id=${cardData.id}" class="slide-link">
 <div class="slide-box-img">
    <img src="${cardData._embedded["wp:featuredmedia"][0].source_url}" alt="${cardData.title.rendered}">
 </div>
