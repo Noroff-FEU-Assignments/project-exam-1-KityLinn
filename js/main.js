@@ -68,8 +68,7 @@ function showSlides(n) {
 // carousel render fuction
 
 const renderCard = (cardData) => {
-  return
-`<div class="slide-box">
+  return`<div class="slide-box">
 <a href="./details.html?id=${cardData.id}" class="slide-link">
 <div class="slide-box-img">
    <img src="${cardData._embedded["wp:featuredmedia"][0].source_url}" alt="${cardData.title.rendered}">
@@ -100,6 +99,8 @@ slideArray.forEach((cardArray)=> {
 
 });
 slideShowContainer.innerHTML =slides;
+showSlides(1);
+
 };
 makeRequest(carousel_url, listRequestComplete);
 const renderSlides = (data) => {
