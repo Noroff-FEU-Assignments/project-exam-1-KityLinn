@@ -1,4 +1,4 @@
-import {makeRequest, main_url} from "./export.js";
+import {makeRequest, carousel_url} from "./export.js";
 
 // Hamburger menu
 const mobNav = document.querySelector(".mobile-burger");
@@ -39,10 +39,6 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 };
 
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-};
-
 
 next.onclick = function() {plusSlides(+1);}
 prev.onclick = function() {plusSlides(-1);}
@@ -71,41 +67,41 @@ function showSlides(n) {
 */
 // carousel render fuction
 
-const renderCard = (data) => {
+const renderCard = (cardData) => {
   return
 `<div class="slide-box">
-<a href="${data.link}" class="slide-link">
+<a href="./details.html?id=${cardData.id}" class="slide-link">
 <div class="slide-box-img">
-   <img src="${data.image}" alt="${data.alt}">
+   <img src="${cardData._embedded["wp:featuredmedia"][0].source_url}" alt="${cardData.title.rendered}">
 </div>
-<h3>${data.description}</h3>
+<h3>${cardData.title.rendered}</h3>
 </a>
 </div>`
-}
+};
 
+const slideShowContainer = document.querySelector('.slideshow-container')
 
-makeRequest(main_url, console.log);
+const listRequestComplete = (data) => {
+  var numberPerSlide = 4;
+  var slideArray = [];
+  //splitting the data into smaller arrays
+  for (var i = 0; i < Math.ceil(data.length/numberPerSlide); i++) {
+    slideArray.push(data.slice(i*numberPerSlide, (i+1)*numberPerSlide));
+};
+// render slides
+var slides = ""
+slideArray.forEach((cardArray)=> {
+  slides+= '<div class="mySlides fade">';
+  cardArray.forEach(cardData =>{
+    slides+=renderCard(cardData)
 
-/*
-async function wpData() {
-  const response = await fetch("https://www.linn-eksamen.com/wp-json/wp/v2/posts/43?_embed");
-  const Data = await response.json();
-  console.log(Data);
+  });
+  slides+='</div>';
 
+});
+slideShowContainer.innerHTML =slides;
+};
+makeRequest(carousel_url, listRequestComplete);
+const renderSlides = (data) => {
 
-  const test = document.querySelector(".test");
-  const image = Data._embedded["wp:featuredmedia"][0].source_url;
-  const text = Data.title.rendered;
-
-
-test.innerHTML = `
-<img src="${image}" alt="">
-<h3>${text}</h3>
-`
-}
-wpData()
-
-*/
-
-
-// const name = Data._embedded.author[0].name; = author name
+};
