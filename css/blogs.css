@@ -12,14 +12,17 @@
 
 .blogs-container {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(2, 50%);
-    grid-gap: 10px;
-    width: 90%;
-    height: 100%;
+    grid-row-gap: 20px;
+    width: 100%;
+    height: fit-content
+
 
 }
 .blog-post {
     height: fit-content;
+
 
 }
 
@@ -27,7 +30,9 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 500px;
+    border:  solid black 2px;
+    color: black;
 
 }
 .blog-image-container {

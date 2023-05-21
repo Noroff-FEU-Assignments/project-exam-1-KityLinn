@@ -16,7 +16,7 @@ function renderList(blogArray) {
     `<a href="./blog-page.html?id=${post.id}" class="blog-post-link">
         <h3>${post.title.rendered}</h2>
         <div class="blog-image-container">
-            <img src="${post._embedded["wp:featuredmedia"][0].source_url}" alt="${post.title.rendered}">>
+            <img src="${post._embedded["wp:featuredmedia"][0].source_url}" alt="${post.title.rendered}">
         </div>
         <p>${post.excerpt.rendered}</p>
     </a>`
@@ -27,3 +27,6 @@ function renderList(blogArray) {
 
 };
 getMorePosts()
+
+const seeMore = document.querySelector('.see-more-button');
+seeMore.addEventListener("click", getMorePosts);
