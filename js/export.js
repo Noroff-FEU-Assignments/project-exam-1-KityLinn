@@ -2,7 +2,7 @@ export const main_url = "https://www.linn-eksamen.com/wp-json/wp/v2/posts?_embed
 export const carousel_url = "https://www.linn-eksamen.com/wp-json/wp/v2/posts?_embed&per_page=8";
 
 export function fetchById(id) { //fetches by ID
-    return `https://www.linn-eksamen.com/wp-json/wp/v2/posts/${id}?_embed;`
+    return `https://www.linn-eksamen.com/wp-json/wp/v2/posts?/${id}?_embed;`
    };
 
 export function pageUrl(page) { //denne returnerer url med rett nummer
