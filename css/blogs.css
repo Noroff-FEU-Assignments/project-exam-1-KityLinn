@@ -16,13 +16,12 @@
     grid-template-columns: repeat(2, 50%);
     grid-row-gap: 20px;
     width: 100%;
-    height: fit-content
+    height: fit-content;
 
 
 }
 .blog-post {
     height: fit-content;
-
 
 }
 

@@ -4,4 +4,32 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 5vh 10%;
+}
+
+.post-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.post-container h2 {
+
+}
+.post-image {
+
+}
+.post-container img {
+    width: 100%;
+
+}
+.text-box {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.post-container p {
+
+
 }
