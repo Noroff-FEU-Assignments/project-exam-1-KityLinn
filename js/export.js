@@ -5,7 +5,7 @@ export function fetchById(id) { //fetches by ID
     return `https://www.linn-eksamen.com/wp-json/wp/v2/posts/${id}?_embed;`
    };
 
-   export function pageUrl(page) { //denne returnerer url med rett nummer
+export function pageUrl(page) { //denne returnerer url med rett nummer
     return `https://www.linn-eksamen.com/wp-json/wp/v2/posts?_embed&per_page=10&page=${page}`; 
   };
 
