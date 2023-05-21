@@ -1,6 +1,8 @@
 import {makeRequest, carousel_url} from "./export.js";
 
+
 // Hamburger menu
+ 
 const mobNav = document.querySelector(".mobile-burger");
 const mobItems = document.querySelectorAll(".mob-item");
 const mobButton= document.querySelector(".mob-button");
@@ -54,18 +56,11 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "flex";
 }
 
-/*
-`<div class="slide-box">
-<a href="${post-link}" class="slide-link">
-<div class="slide-box-img">
-   <img src="${image-link}" alt="${alt-text}">
-</div>
-<h3>${description}</h3>
-</a>
-</div>`
-*/
+
 // carousel render fuction
 
+const slideShowContainer = document.querySelector('.slideshow-container')
+//render for single card
 const renderCard = (cardData) => {
   return`<div class="slide-box">
 <a href="./blog-page.html?id=${cardData.id}" class="slide-link">
@@ -77,8 +72,8 @@ const renderCard = (cardData) => {
 </div>`
 };
 
-const slideShowContainer = document.querySelector('.slideshow-container')
 
+// divides array into 2 sets of 4
 const listRequestComplete = (data) => {
   var numberPerSlide = 4;
   var slideArray = [];
@@ -99,9 +94,5 @@ slideArray.forEach((cardArray)=> {
 });
 slideShowContainer.innerHTML =slides;
 showSlides(1);
-
 };
 makeRequest(carousel_url, listRequestComplete);
-const renderSlides = (data) => {
-
-};

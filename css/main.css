@@ -23,8 +23,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     height: fit-content;
     margin: 5vh 20px;
+}
+.carousel h2 {
+  font-weight: 700;
+  font-family: var(--head-font);
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+  border: solid black 2px;
+}
+.carousel-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  margin: 5vh 20px;
+  
+
 }
 /* Slideshow container */
 .slideshow-container {
@@ -32,7 +50,6 @@
     height: fit-content;
     display: flex;
     justify-content: center;
-    border-radius: 20%;
   }
   .slide-box {
     width: 25%;
@@ -43,7 +60,6 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    
   }
   .slide-link h3 {
     font-family: var(--main-font);
@@ -68,7 +84,6 @@
     flex-direction: row;
     gap: 20px;
     height: fit-content;
-    
   }
   
   /* Next & previous buttons */
@@ -81,16 +96,15 @@
     font-size: 20px;
     transition: 0.6s ease;
     user-select: none;
-    border-radius: 0 3px 3px 0;
   }
   
 
   .next {
-    border-radius: 3px 0 0 3px;
+    border-radius: 0 4px 4px 0;
   }
   .prev {
 
-    border-radius: 3px 0 0 3px;
+    border-radius: 4px 0 0 4px;
   }
   
 
@@ -107,6 +121,6 @@
   }
   
   @keyframes fade {
-    from {opacity: .4}
+    from {opacity: 0.3}
     to {opacity: 1}
   }
