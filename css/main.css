@@ -1,16 +1,15 @@
 @import 'root.css';
 
-.intro {
-    background-color: var(--main-bg);
-    color: var(--secondary-color);
-    font-family: var(--head-font);
-    font-size: 1.2rem;
-    padding: 10px;
-}
+
 .header-section {
-    margin-top: 2vh;
-    display:flex;
-    justify-content: center;
+  width: 100%;
+  background-color: var(--main-bg);
+}
+.intro {
+  color: var(--secondary-color);
+  font-family: var(--head-font);
+  font-size: 1.2rem;
+  padding: 10px;
 }
 
 @media (min-width:1024px) {
