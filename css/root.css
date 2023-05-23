@@ -10,8 +10,8 @@
     --body-color: #E5E5FE;
     --new-body-color: #e0dfdf;
     --default-text-color:white;
+    --default-black-text-colo:black;
     --default-text-hover: rgba(255, 255, 255, 0.941);
-    --test-color: #D26BE3;
     --green-border: solid var(--secondary-color) 3px;
     --head-font: 'Space Grotesk', sans-serif;
     --main-font: 'Roboto', sans-serif;

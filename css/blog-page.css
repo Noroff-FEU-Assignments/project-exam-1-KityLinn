@@ -33,3 +33,25 @@
 
 
 }
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 99; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    background-color: rgba(0,0,0,0.4);
+  }
+  
+
+  .modal-content {
+    margin: 5% auto; 
+    width: 70%;
+    height: 90%; 
+  }
+  .modal-content img {
+    height: 100%;
+  }
+  
