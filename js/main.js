@@ -77,6 +77,7 @@ const listRequestMobile = (mobileData) => {
   mobileData.forEach((mobileArray) => {
     const mobilePost = document.createElement("div");
     mobilePost.classList.add("mobile-post");
+    mobilePost.classList.add("fade");
     mobilePost.innerHTML = 
     `<a href="./blog-page.html?id=${mobileArray.id}" class="mobile-link">
     <div class="mobile-box-img">

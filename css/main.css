@@ -35,40 +35,54 @@ border: solid black 2px;
   display: none;
 }
 /*Displays mobile version */
+
 .mobile-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin: 5vh 0;
   gap: 90px;
-
-  
 }
 .mobile-post {
   display: flex;
+
 }
 .mobile-link {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: solid black 2px;
-  max-width: 500px;
 
 }
 .mobile-link h3 {
   font-family: var(--main-font);
   font-weight: 400;
   font-size: 16px;
-  color: black;
+  color: var(--default-black-text-color);
+  max-width: 400px;
+
 }
 .mobile-box-img {
-  max-width: 500px;
-  height: 400px;
+  max-width: 400px;
+  max-height: 400px;
+
 
 }
 .mobile-box-img img {
   height: 100%;
   width: 100%;
-  
+}
+
+    /* Fading animation */
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: 0.3}
+  to {opacity: 1}
 }
 
 
@@ -77,6 +91,14 @@ border: solid black 2px;
     .intro {
       padding-left: 10%;
 }
+.carousel h2 {
+  font-weight: 700;
+  font-family: var(--head-font);
+  border-radius: 10px;
+  width: 50%;
+  text-align: center;
+  border: solid black 2px;
+  }
 
 .carousel-container {
   display: flex;
@@ -108,7 +130,7 @@ border: solid black 2px;
     font-family: var(--main-font);
     font-weight: 400;
     font-size: 16px;
-    color: black;
+    color: var(--default-black-text-color);
   
   }
   .slide-box-img {
@@ -154,16 +176,8 @@ border: solid black 2px;
   .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
   }
-    /* Fading animation */
-    .fade {
-      animation-name: fade;
-      animation-duration: 1.5s;
-    }
-    
-    @keyframes fade {
-      from {opacity: 0.3}
-      to {opacity: 1}
-    }
+
+
     .mobile-content {
       display: none;
   
