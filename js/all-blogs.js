@@ -1,7 +1,7 @@
 import {makeRequest, pageUrl} from "./export.js";
 
 var currentPage = 1;
-//først kan vi lage den som henter neste i listen
+
 function getMorePosts() {
   makeRequest(pageUrl(currentPage++), renderList); //denne gir neste sidetall til url function i andre filen
 };
@@ -21,8 +21,7 @@ function renderList(blogArray) {
         <p>${post.excerpt.rendered}</p>
     </a>`
     listElement.appendChild(blogPost)
-    //her må du sette verdier inn i htmlen for hver post 
-    //og så append til listElement
+
   });
 
 };
