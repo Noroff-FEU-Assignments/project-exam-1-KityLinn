@@ -23,12 +23,11 @@
   margin: 5vh 20px;
 }
 .carousel h2 {
-font-weight: 700;
+font-weight: var(--h2-font-weight);
 font-family: var(--head-font);
 border-radius: 10px;
-width: 50%;
 text-align: center;
-border: solid black 2px;
+
 }
 /*Hides the carousel */
 .carousel-container {
@@ -51,7 +50,7 @@ border: solid black 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid black 2px;
+  box-sizing: content-box;
 
 }
 .mobile-link h3 {
@@ -65,12 +64,12 @@ border: solid black 2px;
 .mobile-box-img {
   max-width: 400px;
   max-height: 400px;
-
-
 }
 .mobile-box-img img {
   height: 100%;
   width: 100%;
+  border-radius: var(--image-border-radius);
+  overflow: hidden;
 }
 
     /* Fading animation */
@@ -141,6 +140,7 @@ border: solid black 2px;
     width: 100%;
     height: 100%;
     overflow: hidden;
+    border-radius: var(--image-border-radius);
   }
 
   /* Hide the images by default */

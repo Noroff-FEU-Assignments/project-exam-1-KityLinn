@@ -14,7 +14,7 @@ function renderList(blogArray) {
     blogPost.classList.add("blog-post");
     blogPost.innerHTML =
     `<a href="./blog-page.html?id=${post.id}" class="blog-post-link">
-        <h3>${post.title.rendered}</h2>
+        <h3>${post.title.rendered}</h3>
         <div class="blog-image-container">
             <img src="${post._embedded["wp:featuredmedia"][0].source_url}" alt="${post.title.rendered}">
         </div>
