@@ -26,6 +26,7 @@ function renderSingle (singlePost) {
 
 </div>`
     post.appendChild(postContainer);
+    document.title = `Just Another Game Girl | ${singlePost.title.rendered}`;
     const modalTrigger = document.querySelector("#modal-trigger");
     const imageModal = document.querySelector("#image-modal");
 

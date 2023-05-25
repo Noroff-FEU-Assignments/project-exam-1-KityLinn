@@ -10,6 +10,9 @@ export function pageUrl(page) { //denne returnerer url med rett nummer
   };
 
 export const errorMsg = "There was an error ";
+export const main = document.querySelector("main");
+const loadingIndic = '<span class="loader"></span>';
+
 
 
 export async function makeRequest(url, renderFunction) {
@@ -17,6 +20,7 @@ export async function makeRequest(url, renderFunction) {
         let res = await fetch(url);
         const data = await res.json();
         renderFunction(data);
+
     } catch (error) {
         console.log( error);
     }

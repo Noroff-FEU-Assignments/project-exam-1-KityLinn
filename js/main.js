@@ -1,5 +1,6 @@
 import { makeRequest, carousel_url } from "./export.js";
 
+
 // Carousel
 
 const next = document.querySelector("#next");
