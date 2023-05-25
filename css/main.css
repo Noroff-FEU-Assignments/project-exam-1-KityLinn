@@ -22,6 +22,7 @@
   flex-direction: column;
   height: fit-content;
   margin: 5vh 20px;
+  
 }
 .carousel h2 {
 font-weight: var(--h2-font-weight);

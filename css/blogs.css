@@ -7,7 +7,10 @@
     align-items: center;
     height: fit-content;
     width: 100%;
-
+    font-family: var(--main-font);
+}
+.blogs-section h2 {
+    font-family: var(--head-font);
 }
 
 .blogs-container {
@@ -33,18 +36,21 @@
 .blog-post-link h3 {
     max-width: 400px;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: 500;
+  
     
 }
 .blog-post-link p {
     max-width: 400px;
     font-size: 1.1rem;
 
+
 }
 .blog-image-container {
     max-width: 400px;
     width: 100%;
     height: 400px;
+    
     
 }
 .blog-image-container img {
@@ -61,6 +67,7 @@
     border: transparent;
     border-radius: 0 50px 50px 0;
     padding: 10px;
+    color: var( --secondary-color);
 }
 .see-more-button:hover {
     cursor: pointer;
