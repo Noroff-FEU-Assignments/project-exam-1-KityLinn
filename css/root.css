@@ -6,6 +6,7 @@
 
 :root {
     --secondary-color:#60af05;
+    --secondary-opacity:rgba(96, 175, 5, 0.4);
     --main-bg: #222;
     --body-color: #E5E5FE;
     --new-body-color: #e0dfdf;
