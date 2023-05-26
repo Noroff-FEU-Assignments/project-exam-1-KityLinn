@@ -4,19 +4,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5vh 10%;
+    margin: 5vh 20px;
 }
 
 .post-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width: 1000px;
 
 }
 .post-container h2 {
+  font-family: var(--head-font);
+  padding-bottom: 50px;
 
 }
+
 .post-image {
+  max-width: 600px;
 
 }
 .post-container img {
@@ -27,6 +32,9 @@
     display: flex;
     gap: 20px;
     flex-direction: column;
+    font-family: var(--main-font);
+    color: var(--default-black-text-color);
+    margin: var(--standard-seperation-margin);
 }
 
 .post-container p {

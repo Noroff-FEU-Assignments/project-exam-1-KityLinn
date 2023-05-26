@@ -89,20 +89,18 @@ textarea {
     resize: vertical;
     box-shadow:var(--box-shadow);
     border-radius:15px;
-    height: 200px;
+    height: 250px;
     width: 100vw;
     max-width: 600px;
+    padding: 10px;
+    font-size: 0.8rem;
 
 }
 textarea::placeholder{
     padding: 5px;
-    font-size: 1.3rem;
+    font-size: 0.8rem;
 }
-textarea::after{
-    padding: 20px;
-    font-size: 1.3rem;
 
-}
 #name { 
 
 
