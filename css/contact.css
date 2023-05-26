@@ -4,8 +4,62 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 5vh 0;
 }
 #form {
     display: flex;
     flex-direction: column;
+}
+
+.contact-me {
+    width:100%;
+    max-width: 700px;
+    height: 500px;
+    border: var(--green-border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.name-email-container {
+    display: flex;
+    flex-direction: row;
+    gap: 200px;
+    
+}
+.name-container {
+
+}
+.email-container {
+
+}
+.subject-container {
+    
+}
+.message-container {
+
+}
+
+/* form items*/
+input[type=text] {
+    border-radius: 10px;
+
+}
+#name {
+
+}
+#email {
+
+}
+
+#subject {
+
+}
+
+#message {
+
+}
+
+#success {
+    
 }

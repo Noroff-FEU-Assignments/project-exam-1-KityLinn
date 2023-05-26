@@ -40,20 +40,30 @@
     </header>
     <main>
         <section class="contact-section">
-            <form id="form">
-                <span id ="success"></span>
-                <input placeholder="Name" type="text" id="name">
-                <span id="nameMessage"></span>
-                <input placeholder="Email" type="text" id="email">
-                <span id="emailMessage"></span>
-                <input placeholder="Subject" type="text" id="subject">
-                <span id="subjectMessage"></span>
-                <input placeholder="Message" type="text" id="message">
-                <span id="messageContent"></span>
-                <button type="submit">Submit</button>
+            <form id="form" class="contact-me">
+                <div class="name-email-container">
+                    <div class="name-container">
+                        <label for="name">Your Name</label>
+                        <input  type="text" id="name">
+                        <span id="nameMessage"></span>
+                    </div>
+                    <div class="email-container">
+                        <input placeholder="Your Email" type="text" id="email">
+                        <span id="emailMessage"></span>
+                    </div>
+                </div>
+                <div class="subject-container">
+                    <input placeholder="Subject" type="text" id="subject">
+                    <span id="subjectMessage"></span>
+                </div>
+                <div class="message-container">
+                    <input placeholder="Message" type="text" id="message">
+                    <span id="messageContent"></span>
+                </div>
             </form>
+            <span id="success"></span>
+            <button type="submit">Submit</button>
         </section>
-
     </main>
     <footer>
         <div class="footer-container">
