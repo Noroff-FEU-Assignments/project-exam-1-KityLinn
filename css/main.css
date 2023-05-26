@@ -45,7 +45,7 @@ border: solid black 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 5vh 0;
+  margin: var(--standard-seperation-margin);
   gap: 90px;
 }
 .mobile-post {

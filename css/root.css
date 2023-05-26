@@ -19,6 +19,7 @@
     --h2-font-weight: 700;
     --image-border-radius: 10px;
     --box-shadow:4px 4px 20px rgba(0,0,0,0.1);
+    --standard-seperation-margin:5vh 0;
 }
 
 body {
