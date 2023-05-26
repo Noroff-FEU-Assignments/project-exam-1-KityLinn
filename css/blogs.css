@@ -42,8 +42,7 @@
 .blog-post-link p {
     max-width: 400px;
     font-size: 1.1rem;
-
-
+    padding-top: 20px;
 }
 .blog-image-container {
     max-width: 400px;
