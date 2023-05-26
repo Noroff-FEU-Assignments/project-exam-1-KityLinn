@@ -18,7 +18,7 @@ function renderList(blogArray) {
         <div class="blog-image-container">
             <img src="${post._embedded["wp:featuredmedia"][0].source_url}" alt="${post.title.rendered}">
         </div>
-        <p>${post.excerpt.rendered}</p>
+        ${post.excerpt.rendered}
     </a>`
     listElement.appendChild(blogPost)
 

@@ -17,7 +17,7 @@ function renderSingle (singlePost) {
          <img src="${singlePost._embedded["wp:featuredmedia"][0].source_url}" alt="${singlePost.title.rendered}">
     </div>
     <div class="text-box">
-         <p>${singlePost.content.rendered}</p>
+         ${singlePost.content.rendered}
     </div>
 <div id="image-modal" class="modal">
      <div class="modal-content">
