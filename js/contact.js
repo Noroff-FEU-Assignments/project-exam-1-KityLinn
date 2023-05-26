@@ -50,7 +50,7 @@ form.onsubmit = (event) => {
     messageContent.innerHTML = "Message must be at least 25 character long";
     valid = false;
   } else {
-    adressMessage.innerHTML = "";
+    messageContent.innerHTML = "";
   }
 
   if (emailInput.value.trim().length == 0) {

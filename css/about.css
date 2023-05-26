@@ -28,4 +28,5 @@ border: solid black 2px;
     display: flex;
     flex-direction: column;
     gap: 30px;
+    font-family: var(--main-font);
 }

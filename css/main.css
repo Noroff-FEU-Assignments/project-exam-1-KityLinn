@@ -61,8 +61,8 @@ border: solid black 2px;
 }
 .mobile-link h3 {
   font-family: var(--main-font);
-  font-weight: 500;
-  font-size: 1.1rem;
+  font-weight: 400;
+  font-size: 1rem;
   color: var(--default-black-text-color);
   max-width: 300px;
 
@@ -130,7 +130,7 @@ border: solid black 2px;
   .slide-link h3 {
     font-family: var(--main-font);
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1.1rem;
     color: var(--default-black-text-color);
   
   }
