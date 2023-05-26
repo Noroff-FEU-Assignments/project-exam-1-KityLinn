@@ -44,25 +44,28 @@
                 <div class="name-email-container">
                     <div class="name-container">
                         <label for="name">Your Name</label>
-                        <input  type="text" id="name">
+                        <input placeholder="Name" type="textarea" id="name">
                         <span id="nameMessage"></span>
                     </div>
                     <div class="email-container">
-                        <input placeholder="Your Email" type="text" id="email">
+                        <label for="email">Your Email</label>
+                        <input placeholder="Email" type="textarea" id="email">
                         <span id="emailMessage"></span>
                     </div>
                 </div>
                 <div class="subject-container">
-                    <input placeholder="Subject" type="text" id="subject">
+                    <label for="subject">Subject</label>
+                    <input placeholder="Subject" type="textarea" id="subject">
                     <span id="subjectMessage"></span>
                 </div>
                 <div class="message-container">
-                    <input placeholder="Message" type="text" id="message">
+                    <label for="message">Message</label>
+                    <input placeholder="Message" type="textarea" id="message">
                     <span id="messageContent"></span>
                 </div>
+                <span id="success"></span>
+                <button type="submit">Contact me</button>
             </form>
-            <span id="success"></span>
-            <button type="submit">Submit</button>
         </section>
     </main>
     <footer>
