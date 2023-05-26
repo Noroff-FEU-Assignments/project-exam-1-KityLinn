@@ -61,7 +61,7 @@ header {
     align-items: center;
     gap: 40px;
     position: absolute;
-    top: 8%;
+    top: 7%;
     transform: translateY(-130%);
     transition: transform 0.3s;
     width: 100%;
@@ -70,7 +70,7 @@ header {
     background-color: var(--main-bg);
     color: var(--default-text-color);
     list-style: none;
-    padding: 5vh 0px;
+    padding: 6vh 0px;
     border-bottom: var(--green-border);
 }
 
