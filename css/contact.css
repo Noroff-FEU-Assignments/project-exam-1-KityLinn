@@ -13,7 +13,7 @@
 
 .contact-me {
     width:100%;
-    max-width: 700px;
+    max-width: 1000px;
     height: 500px;
     border: var(--green-border);
     display: flex;
@@ -29,6 +29,7 @@
     align-items: center;
 
 
+
 }
 .name-email-container {
     display: flex;
@@ -41,6 +42,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+
 
 }
 
@@ -68,42 +70,50 @@
 /* form items*/
 input[type=textarea] {
   resize: vertical;
+  box-shadow:var(--box-shadow);
   border-radius:15px;
   padding: 10px;
-  box-shadow:var(--box-shadow);
-  
+}
+textarea {
+    resize: vertical;
+    box-shadow:var(--box-shadow);
+    border-radius:15px;
+    height: 200px;
+    width: 100vw;
+    max-width: 600px;
+
+}
+textarea:placeholder-shown{
+    padding: 5px;
+    font-size: 1.3rem;
 }
 #name { 
-    width: 600px;
-    max-width: 200px;
+
 
 }
 #email {
-    width: 600px;
-    max-width: 200px;
+
 
 }
 
 #subject {
-    width: 1000px;
+    width: 100vw;
     max-width: 300px;
+
 
 }
 
 #message {
-    width: 1000px;
-    max-width: 600px;
+
 
 }
 
 #success {
     
 }
-button {
+#submit-button {
     width: 150px;
     padding: 20px;
-    background-color: black;
-    color: white;
-    border: solid white 2px;
+    border: solid var(--secondary-color) 2px;
     border-radius: 10px;
 }
