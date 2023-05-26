@@ -61,7 +61,7 @@ header {
     align-items: center;
     gap: 40px;
     position: absolute;
-    top: 7%;
+    top: 8%;
     transform: translateY(-130%);
     transition: transform 0.3s;
     width: 100%;
