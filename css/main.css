@@ -29,6 +29,10 @@ font-weight: var(--h2-font-weight);
 font-family: var(--head-font);
 border-radius: 10px;
 text-align: center;
+font-size: 1.4rem;
+width: 50%;
+text-align: center;
+border: solid black 2px;
 
 }
 /*Hides the carousel */
@@ -94,12 +98,7 @@ text-align: center;
       padding-left: 10%;
 }
 .carousel h2 {
-  font-weight: 700;
-  font-family: var(--head-font);
-  border-radius: 10px;
-  width: 50%;
-  text-align: center;
-  border: solid black 2px;
+  font-size: 1.2rem;
   }
 
 .carousel-container {

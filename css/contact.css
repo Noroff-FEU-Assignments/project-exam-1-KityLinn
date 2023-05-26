@@ -6,9 +6,20 @@
     align-items: center;
     margin: 5vh 0;
 }
+.contact-section h2 {
+    font-weight: var(--h2-font-weight);
+    font-family: var(--head-font);
+    border-radius: 10px;
+    text-align: center;
+    font-size: 1.4rem;
+    width: 50%;
+    text-align: center;
+    border: solid black 2px;
+}
 #form {
     display: flex;
     flex-direction: column;
+    margin: 5vh 0;
 }
 
 .contact-me {
