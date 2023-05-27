@@ -11,7 +11,7 @@ font-weight: var(--h2-font-weight);
 font-family: var(--head-font);
 border-radius: 10px;
 text-align: center;
-font-size: 1.4rem;
+font-size: var(--h2-font-size-mobile);
 width: 50%;
 text-align: center;
 border: solid black 2px;   
@@ -30,3 +30,12 @@ border: solid black 2px;
     gap: 30px;
     font-family: var(--main-font);
 }
+
+/* desktop */
+
+@media (min-width:1024px) {
+    .contact-section h2 {
+        font-size: var(--h2-font-size-desktop);
+    }
+
+ }

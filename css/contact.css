@@ -11,7 +11,7 @@
     font-family: var(--head-font);
     border-radius: 10px;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: var(--h2-font-size-mobile);
     width: 50%;
     text-align: center;
     border: solid black 2px;
@@ -135,3 +135,12 @@ textarea::placeholder{
     cursor: pointer;
 
 }
+
+/* Desktop */
+
+@media (min-width:1024px) {
+    .contact-section h2 {
+        font-size: var(--h2-font-size-desktop);
+    }
+
+ }
