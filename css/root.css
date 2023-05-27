@@ -14,7 +14,7 @@
     --default-black-text-color:black;
     --default-text-hover: rgba(255, 255, 255, 0.941);
     --green-border: solid var(--secondary-color) 3px;
-    --image-border-radius: 10px;
+    --image-border-radius: 10px 10px 0 0;
     --box-shadow:4px 4px 20px rgba(0,0,0,0.1);
     /*fonts */
     --head-font: 'Space Grotesk', sans-serif;
