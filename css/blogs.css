@@ -29,6 +29,10 @@
 }
 .blog-post {
     height: fit-content;
+    background: white;
+    border-radius: 15px;
+    padding:5px;
+    box-shadow: var(--card-box-shadow);
 }
 
 .blog-post-link {
@@ -37,19 +41,23 @@
     flex-direction: column;
     color: var( --default-black-text-color);
     height: fit-content;
-    border: solid black 2px;
+    max-width: 400px;
+
 }
 .blog-post-link h3 {
-    max-width: 400px;
+    max-width: 500px;
     font-size: 1.1rem;
     font-weight: 500;
     padding-bottom: 20px;
+    text-decoration: underline;
+    margin-bottom: -15px;
     
 }
 .blog-post-link p {
     max-width: 400px;
     font-size: 0.9rem;
     padding-top: 20px;
+
 }
 .blog-image-container {
     max-width: 400px;
@@ -59,7 +67,7 @@
 .blog-image-container img {
     height: 100%;
     width: 100%;
-    object-fit:fill;
+    object-fit:cover;
     overflow: hidden;
     border-radius: var(--image-border-radius);   
 }

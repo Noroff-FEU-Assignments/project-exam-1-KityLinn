@@ -118,6 +118,10 @@ border-radius: 10px;
   }
   .slide-box {
     width: 25%;
+    background: white;
+    border-radius: 15px;
+    padding:5px;
+    box-shadow: var(--card-box-shadow);
   }
   .slide-link {
     width: 100%;
@@ -139,8 +143,6 @@ border-radius: 10px;
     height: 100%;
     max-width: 300px;
     object-fit: cover;
-
- 
   }
 
   .slide-box-img img {
