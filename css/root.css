@@ -51,6 +51,7 @@ header {
 }
 .logo {
     padding: 13px 20px;
+    font-size: 1.4rem;
 }
 
 .mobile-nav {
@@ -189,7 +190,7 @@ footer {
 
     }
     .nav-links a {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
     }
     .desktop-item:hover {
         color:var(--secondary-color);
