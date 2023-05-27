@@ -119,7 +119,7 @@ border-radius: 10px;
   .slide-box {
     width: 25%;
     background: white;
-    border-radius: 15px;
+    border-radius: var(--card-border-radius);
     padding:5px;
     box-shadow: var(--card-box-shadow);
   }
