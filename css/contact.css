@@ -66,18 +66,7 @@
 .contact-me * span {
     color: red;
 }
-.email-container {
 
-
-}
-.subject-container {
-
-    
-}
-.message-container {
-
-
-}
 
 /* form items*/
 input[type=textarea] {
@@ -102,14 +91,7 @@ textarea::placeholder{
     font-size: 0.8rem;
 }
 
-#name { 
 
-
-}
-#email {
-
-
-}
 
 #subject {
     width: 100vw;
@@ -118,14 +100,7 @@ textarea::placeholder{
 
 }
 
-#message {
 
-
-}
-
-#success {
-    
-}
 #submit-button {
     width: 150px;
     padding: 20px;

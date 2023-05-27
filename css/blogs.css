@@ -40,7 +40,7 @@
     align-items: center;
     flex-direction: column;
     color: var( --default-black-text-color);
-    height: fit-content;
+    height: 480px;
     max-width: 400px;
 
 }
@@ -57,6 +57,10 @@
     max-width: 400px;
     font-size: 0.9rem;
     padding-top: 20px;
+    overflow: hidden;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 3;
+   display: -webkit-box;
 
 }
 .blog-image-container {
