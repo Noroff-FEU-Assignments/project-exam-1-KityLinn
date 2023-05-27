@@ -5,8 +5,8 @@
 }
 
 :root {
+    /* colors and borders*/
     --secondary-color:#60af05;
-    --secondary-opacity:rgba(96, 175, 5, 0.4);
     --main-bg: #222;
     --body-color: #E5E5FE;
     --new-body-color: #e0dfdf;
@@ -14,13 +14,15 @@
     --default-black-text-color:black;
     --default-text-hover: rgba(255, 255, 255, 0.941);
     --green-border: solid var(--secondary-color) 3px;
+    --image-border-radius: 10px;
+    --box-shadow:4px 4px 20px rgba(0,0,0,0.1);
+    /*fonts */
     --head-font: 'Space Grotesk', sans-serif;
     --main-font: 'Roboto', sans-serif;
     --h2-font-weight: 700;
     --h2-font-size-desktop:1.8rem;
     --h2-font-size-mobile:1.6rem;;
-    --image-border-radius: 10px;
-    --box-shadow:4px 4px 20px rgba(0,0,0,0.1);
+    
     --standard-seperation-margin:5vh 0;
 }
 
