@@ -69,7 +69,7 @@
 
 
 /* form items*/
-input[type=textarea] {
+input[type=text] {
   resize: vertical;
   box-shadow:var(--box-shadow);
   border-radius:15px;
